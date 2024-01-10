@@ -3,7 +3,9 @@
 // import Test from "./components/Test"
 // import Date from "./components/Date"
 
-import PackingList from "./components/conditional_rendering/PackingList";
+import List from "./components/rendering_list/List";
+
+// import PackingList from "./components/conditional_rendering/PackingList";
 
 // import PersonProfile from "./components/childrens/PersonProfile";
 
@@ -26,7 +28,8 @@ function App() {
       {/* <Information /> */}
       {/* <Profile person = {person} age = {age} size = {size}/> */}
       {/* <PersonProfile/> */}
-      <PackingList />
+      {/* <PackingList /> */}
+      <List />
     </>
   )
 }
