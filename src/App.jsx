@@ -2,17 +2,16 @@
 // import Gallery from "./components/Gallery"
 // import Test from "./components/Test"
 // import Date from "./components/Date"
-
-import List from "./components/rendering_list/List";
-
+// import List from "./components/rendering_list/List";
 // import PackingList from "./components/conditional_rendering/PackingList";
-
 // import PersonProfile from "./components/childrens/PersonProfile";
-
 // import Information from "./components/Information"
-
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
+
+import EventPropagation from "./components/event-handler/EventPropagation";
+
+// import EventHandle from "./components/event-handler/EventHandle";
 
 function App() {
   // const person = 'Ashis';
@@ -29,10 +28,11 @@ function App() {
       {/* <Profile person = {person} age = {age} size = {size}/> */}
       {/* <PersonProfile/> */}
       {/* <PackingList /> */}
-      <List />
+      {/* <List /> */}
+      {/* <EventHandle /> */}
+      <EventPropagation />
     </>
-  )
+  );
 }
 
 export default App;
-
