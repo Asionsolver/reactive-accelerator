@@ -9,12 +9,13 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import PreventDefault from "./components/event-handler/PreventDefault";
+// import PreventDefault from "./components/event-handler/PreventDefault";
 
 // import Toolbar from "./components/event-handler/ToolBar";
 // import EventPropagation from "./components/event-handler/EventPropagation";
 
 // import EventHandle from "./components/event-handler/EventHandle";
+import Gallery from './components/state/Gallery';
 
 function App() {
   // const person = 'Ashis';
@@ -22,7 +23,7 @@ function App() {
   // const size = 200;
   return (
     <>
-      <h1>Hello World!</h1>
+      {/* <h1>Hello World!</h1> */}
       {/* <Gallery />
       <Card />
       <Test /> */}
@@ -35,7 +36,8 @@ function App() {
       {/* <EventHandle /> */}
       {/* <EventPropagation /> */}
       {/* <Toolbar /> */}
-      <PreventDefault />
+      {/* <PreventDefault /> */}
+      <Gallery />
     </>
   );
 }
