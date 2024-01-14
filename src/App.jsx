@@ -9,7 +9,10 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import EventPropagation from "./components/event-handler/EventPropagation";
+import PreventDefault from "./components/event-handler/PreventDefault";
+
+// import Toolbar from "./components/event-handler/ToolBar";
+// import EventPropagation from "./components/event-handler/EventPropagation";
 
 // import EventHandle from "./components/event-handler/EventHandle";
 
@@ -30,7 +33,9 @@ function App() {
       {/* <PackingList /> */}
       {/* <List /> */}
       {/* <EventHandle /> */}
-      <EventPropagation />
+      {/* <EventPropagation /> */}
+      {/* <Toolbar /> */}
+      <PreventDefault />
     </>
   );
 }

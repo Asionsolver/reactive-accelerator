@@ -1,10 +1,11 @@
-function Button({ onClick, children }) {
+// eslint-disable-next-line react/prop-types
+function Button({ onSmash, children }) {
   return (
     <button
       onClick={(e) => {
         e.stopPropagation();
-        // console.log(e);
-        onClick();
+        console.dir(e);
+        onSmash();
       }}
     >
       {children}
@@ -20,8 +21,8 @@ export default function EventPropagation() {
         console.log("You clicked on the toolbar!");
       }}
     >
-      <Button onClick={() => console.log("Playing!")}>Play Movie</Button>
-      <Button onClick={() => console.log("Uploading!")}>Upload Image</Button>
+      <Button onSmash={() => console.log("Playing!")}>Play Movie</Button>
+      <Button onSmash={() => console.log("Uploading!")}>Upload Image</Button>
     </div>
   );
 }
