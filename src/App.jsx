@@ -9,13 +9,18 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
+import List from "./components/Array/List";
+
+// import Form from "./components/updatingObject/Form";
+// import MovingDot from "./components/updatingObject/MovieDot";
+
 // import PreventDefault from "./components/event-handler/PreventDefault";
 
 // import Toolbar from "./components/event-handler/ToolBar";
 // import EventPropagation from "./components/event-handler/EventPropagation";
 
 // import EventHandle from "./components/event-handler/EventHandle";
-import Gallery from './components/state/Gallery';
+// import Gallery from './components/state/Gallery';
 
 function App() {
   // const person = 'Ashis';
@@ -37,7 +42,10 @@ function App() {
       {/* <EventPropagation /> */}
       {/* <Toolbar /> */}
       {/* <PreventDefault /> */}
-      <Gallery />
+      {/* <Gallery /> */}
+      {/* <MovingDot /> */}
+      {/* <Form /> */}
+      <List />
     </>
   );
 }
