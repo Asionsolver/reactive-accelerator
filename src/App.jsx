@@ -9,10 +9,12 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import ShapeEditor from "./components/Array/Transforming";
+import CounterList from "./components/Array/CounterList";
+
 
 // import List from "./components/Array/List";
 // import Inspiring from "./components/Array/Inspiring";
+// import ShapeEditor from "./components/Array/Transforming";
 
 // import Form from "./components/updatingObject/Form";
 // import MovingDot from "./components/updatingObject/MovieDot";
@@ -50,7 +52,8 @@ function App() {
       {/* <Form /> */}
       {/* <List /> */}
       {/* <Inspiring /> */}
-      <ShapeEditor />
+      {/* <ShapeEditor /> */}
+      <CounterList />
     </>
   );
 }
