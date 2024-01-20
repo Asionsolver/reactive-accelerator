@@ -9,6 +9,10 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
+import OurReactApp from "./components/state_management/react-state/OurReactApp";
+
+// import OurApp from "./components/state_management/OurApp";
+
 // import InsertArray from "./components/Array/InsertArray";
 
 // import CounterList from "./components/Array/CounterList";
@@ -57,6 +61,8 @@ function App() {
       {/* <ShapeEditor /> */}
       {/* <CounterList />   */}
       {/* <InsertArray /> */}
+      {/* <OurApp /> */}
+      <OurReactApp />
     </>
   );
 }

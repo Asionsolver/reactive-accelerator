@@ -1,9 +1,9 @@
 import Form from "./Form";
-import "./style.css"
+import "./style.css";
 
 const statuses = ["empty", "typing", "submitting", "success", "error"];
 
-function App() {
+export default function OurApp() {
     return (
         <div>
             {statuses.map((status) => (
@@ -12,5 +12,3 @@ function App() {
         </div>
     );
 }
-
-export default App;
