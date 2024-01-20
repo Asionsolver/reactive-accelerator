@@ -14,8 +14,10 @@ export default function Pointer() {
     
     // When you saw group of state, you can use object to store them.
     setPointer({
+      // x: event.clientX,
+      // y: event.clientY,
+      ...pointer,
       x: event.clientX,
-      y: event.clientY,
     });
   };
   return (
