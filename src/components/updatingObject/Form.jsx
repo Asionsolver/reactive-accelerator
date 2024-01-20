@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 export default function Form() {
   const [person, setPerson] = useState({
-    firstName: 'Barbara',
-    lastName: 'Hepworth',
-    email: 'bhepworth@sculpture.com'
+    firstName: 'Ashis',
+    lastName: 'Kumar',
+    email: 'Ashis274@gmail.com'
   });
 
   function handleFirstNameChange(e) {

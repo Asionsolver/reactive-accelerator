@@ -9,7 +9,9 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import CounterList from "./components/Array/CounterList";
+// import InsertArray from "./components/Array/InsertArray";
+
+// import CounterList from "./components/Array/CounterList";
 
 
 // import List from "./components/Array/List";
@@ -53,7 +55,8 @@ function App() {
       {/* <List /> */}
       {/* <Inspiring /> */}
       {/* <ShapeEditor /> */}
-      <CounterList />
+      {/* <CounterList />   */}
+      {/* <InsertArray /> */}
     </>
   );
 }
