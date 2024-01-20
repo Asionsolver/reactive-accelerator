@@ -9,7 +9,8 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import Pointer from "./components/state_management/state-structure/Pointer";
+import Form from "./components/state_management/state-structure/Form";
+// import Pointer from "./components/state_management/state-structure/Pointer";
 
 // import OurReactApp from "./components/state_management/react-state/OurReactApp";
 
@@ -65,7 +66,8 @@ function App() {
       {/* <InsertArray /> */}
       {/* <OurApp /> */}
       {/* <OurReactApp /> */}
-      <Pointer />
+      {/* <Pointer /> */}
+      <Form />
     </>
   );
 }
