@@ -9,7 +9,9 @@
 // import Avatar from './components/props/Avatar';
 // import Profile from './components/props/Profile';
 
-import OurReactApp from "./components/state_management/react-state/OurReactApp";
+import Pointer from "./components/state_management/state-structure/Pointer";
+
+// import OurReactApp from "./components/state_management/react-state/OurReactApp";
 
 // import OurApp from "./components/state_management/OurApp";
 
@@ -62,7 +64,8 @@ function App() {
       {/* <CounterList />   */}
       {/* <InsertArray /> */}
       {/* <OurApp /> */}
-      <OurReactApp />
+      {/* <OurReactApp /> */}
+      <Pointer />
     </>
   );
 }
