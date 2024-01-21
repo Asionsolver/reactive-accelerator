@@ -1,13 +1,14 @@
 // import { Profile as Card } from "./components/Gallery"
 
-import { useState } from "react";
-import MirrorState from "./components/redundant-state/MirrorState";
+import TravelEditable from "./components/duplicationState/TravelEditable";
+
+// import Travel from "./components/duplicationState/Travel";
 
 function App() {
-  const [color, setColor] = useState('red');
-  const handleChangeColor = () => {
-    setColor('blue');
-  };
+  // const [color, setColor] = useState('red');
+  // const handleChangeColor = () => {
+  //   setColor('blue');
+  // };
   // const person = 'Ashis';
   // const age = 25;
   // const size = 200;
@@ -16,11 +17,14 @@ function App() {
       {/* <h1>Hello World!</h1> */}
 
       {/* Mirror State Avoid */}
-      <div>
+      {/* <div>
         <MirrorState messageColor={color} />
         <br />
         <button onClick={handleChangeColor}>Change color from parent</button>
-      </div>
+      </div> */}
+
+      {/* <Travel /> */}
+      <TravelEditable />
     </>
   );
 }
