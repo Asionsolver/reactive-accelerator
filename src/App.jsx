@@ -1,6 +1,7 @@
 // import { Profile as Card } from "./components/Gallery"
 
-import TravelEditable from "./components/duplicationState/TravelEditable";
+import NormalizeTravelPlan from "./components/deeply-nested-state/NormalizeTravelPlan";
+// import TravelEditable from "./components/duplicationState/TravelEditable";
 
 // import Travel from "./components/duplicationState/Travel";
 
@@ -24,7 +25,8 @@ function App() {
       </div> */}
 
       {/* <Travel /> */}
-      <TravelEditable />
+      {/* <TravelEditable /> */}
+      <NormalizeTravelPlan />
     </>
   );
 }
