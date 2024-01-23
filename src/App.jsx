@@ -1,6 +1,9 @@
 // import { Profile as Card } from "./components/Gallery"
 
-import Counters from "./components/preserving_resetting_state/Counters";
+// import PreservingState from "./components/preserving_resetting_state/PreservingState";
+import SamePositionResetting from "./components/preserving_resetting_state/SamePositionResetting";
+
+// import Counters from "./components/preserving_resetting_state/Counters";
 
 // import Counter from "./components/preserving_resetting_state/Counter";
 
@@ -35,7 +38,9 @@ function App() {
       {/* <NormalizeTravelPlan /> */}
       {/* <Counter />
       <Counter /> */}
-      <Counters />
+      {/* <Counters /> */}
+      {/* <PreservingState /> */}
+      <SamePositionResetting />
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function Counters() {
       <ResettingState />
       {showB && <ResettingState />} 
       <label>
-        <input
+        <input 
           type="checkbox"
           checked={showB}
           onChange={e => {
