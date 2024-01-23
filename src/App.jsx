@@ -1,9 +1,15 @@
 // import { Profile as Card } from "./components/Gallery"
 
-import NormalizeTravelPlan from "./components/deeply-nested-state/NormalizeTravelPlan";
+import Counters from "./components/preserving_resetting_state/Counters";
+
+// import Counter from "./components/preserving_resetting_state/Counter";
+
+// import NormalizeTravelPlan from "./components/deeply-nested-state/NormalizeTravelPlan";
 // import TravelEditable from "./components/duplicationState/TravelEditable";
 
 // import Travel from "./components/duplicationState/Travel";
+
+// import "../src/components/preserving_resetting_state/style.css";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -26,7 +32,10 @@ function App() {
 
       {/* <Travel /> */}
       {/* <TravelEditable /> */}
-      <NormalizeTravelPlan />
+      {/* <NormalizeTravelPlan /> */}
+      {/* <Counter />
+      <Counter /> */}
+      <Counters />
     </>
   );
 }
