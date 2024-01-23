@@ -1,7 +1,10 @@
 // import { Profile as Card } from "./components/Gallery"
 
+import ResettingEntireSubtree from "./components/preserving_resetting_state/ResettingEntireSubtree";
+// import SamePositionResetting from "./components/preserving_resetting_state/SamePositionResetting";
+
 // import PreservingState from "./components/preserving_resetting_state/PreservingState";
-import SamePositionResetting from "./components/preserving_resetting_state/SamePositionResetting";
+// import SamePositionResetting from "./components/preserving_resetting_state/SamePositionResetting";
 
 // import Counters from "./components/preserving_resetting_state/Counters";
 
@@ -40,7 +43,8 @@ function App() {
       <Counter /> */}
       {/* <Counters /> */}
       {/* <PreservingState /> */}
-      <SamePositionResetting />
+      {/* <SamePositionResetting /> */}
+      <ResettingEntireSubtree />
     </>
   );
 }
