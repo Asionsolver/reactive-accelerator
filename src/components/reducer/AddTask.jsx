@@ -12,8 +12,8 @@ export default function AddTask({ onAdd }) {
       <input placeholder="Add task" value={text} onChange={handleChangeText} />
       <button
         onClick={() => {
-          onAdd(text);
           setText("");
+          onAdd(text);
         }}
       >
         Add

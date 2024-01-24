@@ -19,27 +19,27 @@ export default function Task() {
     setTasks([...tasks, { id: getNextId(tasks), text: text, done: false }]);
   };
 
-  //   const handleChangeTask = (task) => {
-  //     const newTasks = tasks.map((t) => {
-  //       if (t.id === task.id) {
-  //         return task;
-  //       } else {
-  //         return t;
-  //       }
-  //     });
-  //     setTasks(newTasks);
-  //   };
+    const handleChangeTask = (task) => {
+      const newTasks = tasks.map((t) => {
+        if (t.id === task.id) {
+          return task;
+        } else {
+          return t;
+        }
+      });
+      setTasks(newTasks);
+    };
 
-  //   const handleTaskDelete = (taskId) => {
-  //     const newTasks = tasks.filter((t) => t.id !== taskId.id);
-  //     setTasks(newTasks);
-  //   };
+    const handleTaskDelete = (taskId) => {
+      const deleteTask = tasks.filter((t) => t.id !== taskId);
+      setTasks(deleteTask);
+    };
 
   return (
     <>
       <h1>Prague itinerary</h1>
       <AddTask onAdd={handleTaskAdd} />
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} onChangeTask={handleChangeTask} onDeleteTask={handleTaskDelete}/>
     </>
   );
 }

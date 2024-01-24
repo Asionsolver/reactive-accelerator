@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function SingleTask({ task }) {
+export default function SingleTask({ task, onChangeTask, onDeleteTask }) {
   const [isEditing, setIsEditing] = useState(false);
 
   let taskContent;
@@ -10,7 +10,12 @@ export default function SingleTask({ task }) {
   if (isEditing) {
     taskContent = (
       <>
-        <input value={task.text}/>
+        <input
+          value={task.text}
+          onChange={(e) => {
+            onChangeTask({ ...task, text: e.target.value });
+          }}
+        />
         <button onClick={() => setIsEditing(false)}>Save</button>
       </>
     );
@@ -25,11 +30,20 @@ export default function SingleTask({ task }) {
   return (
     <li>
       <label>
-        <input type="checkbox" />
+        <input
+          type="checkbox"
+          checked={task.done}
+          onChange={(e) =>
+            onChangeTask({
+              ...task,
+              done: e.target.checked,
+            })
+          }
+        />
 
         {taskContent}
 
-        <button>Delete</button>
+        <button onClick={() => onDeleteTask(task.id)}>Delete</button>
       </label>
     </li>
   );
