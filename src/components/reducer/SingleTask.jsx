@@ -10,7 +10,7 @@ export default function SingleTask({ task }) {
   if (isEditing) {
     taskContent = (
       <>
-        <input value={task.text} />
+        <input value={task.text}/>
         <button onClick={() => setIsEditing(false)}>Save</button>
       </>
     );

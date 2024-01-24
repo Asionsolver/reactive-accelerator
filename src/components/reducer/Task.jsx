@@ -9,30 +9,31 @@ export default function Task() {
 
   const getNextId = (data) => {
     const maxId = data.reduce((prev, current) =>
-      prev && prev.id > current.id ? prev : current
+      prev && prev.id > current.id ? prev.id : current.id
     );
     return maxId + 1;
   };
+
   // handler function
   const handleTaskAdd = (text) => {
-    setTasks([...tasks], { id: getNextId(tasks), text, done: false });
+    setTasks([...tasks, { id: getNextId(tasks), text: text, done: false }]);
   };
 
-  const handleChangeTask = (task) => {
-    const newTasks = tasks.map((t) => {
-      if (t.id === task.id) {
-        return task;
-      } else {
-        return t;
-      }
-    });
-    setTasks(newTasks);
-  };
+  //   const handleChangeTask = (task) => {
+  //     const newTasks = tasks.map((t) => {
+  //       if (t.id === task.id) {
+  //         return task;
+  //       } else {
+  //         return t;
+  //       }
+  //     });
+  //     setTasks(newTasks);
+  //   };
 
-  const handleTaskDelete = (taskId) => {
-    const newTasks = tasks.filter((t) => t.id !== taskId.id);
-    setTasks(newTasks);
-  };
+  //   const handleTaskDelete = (taskId) => {
+  //     const newTasks = tasks.filter((t) => t.id !== taskId.id);
+  //     setTasks(newTasks);
+  //   };
 
   return (
     <>
