@@ -1,5 +1,6 @@
 
-import Task from "./components/reducer/Task";
+// import Task from "./components/reducer/Task";
+import Tasks from "./components/reducer/useReducer/Task";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -16,7 +17,8 @@ function App() {
     <>
       {/* <h1>Hello World!</h1> */}
 
-      <Task />
+      {/* <Task /> */}
+      <Tasks />
     </>
   );
 }
