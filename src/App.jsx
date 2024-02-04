@@ -1,6 +1,6 @@
 // import Counter from "./components/escape-hatches/Counter";
-import Stopwatch from "./components/escape-hatches/useRef/stop-watch/StopWatch";
 
+import CatFriends from "./components/escape-hatches/useRef/dom-refs/CatFriends";
 function App() {
   // const [color, setColor] = useState('red');
   // const handleChangeColor = () => {
@@ -13,11 +13,8 @@ function App() {
   return (
     <>
       {/* <h1>Hello World!</h1> */}
-
-      {/* <Task /> */}
-      {/* <Tasks /> */}
-      {/* <Counter /> */}
-      <Stopwatch />
+      <CatFriends />
+   
     </>
   );
 }
