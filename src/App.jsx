@@ -1,6 +1,6 @@
 // import Counter from "./components/escape-hatches/Counter";
 
-import Exposing from "./components/escape-hatches/useRef/exposing-subset/Exposing";
+import Counter from "./components/escape-hatches/useRef/ref-best-practices/Counter";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       {/* <h1>Hello World!</h1> */}
-    <Exposing />
+    <Counter />
    
     </>
   );
