@@ -1,6 +1,6 @@
 // import Counter from "./components/escape-hatches/Counter";
 
-import CatFriends from "./components/escape-hatches/useRef/dom-refs/CatFriends";
+import Form from "./components/escape-hatches/useRef/focus/form";
 function App() {
   // const [color, setColor] = useState('red');
   // const handleChangeColor = () => {
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       {/* <h1>Hello World!</h1> */}
-      <CatFriends />
+    <Form />
    
     </>
   );
