@@ -1,6 +1,7 @@
-// import Counter from "./components/escape-hatches/Counter";
 
-import Counter from "./components/escape-hatches/useRef/ref-best-practices/Counter";
+
+import Todos from "./components/escape-hatches/useRef/flush-sync/Todos";
+
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -13,8 +14,7 @@ function App() {
 
   return (
     <>
-      {/* <h1>Hello World!</h1> */}
-    <Counter />
+      <Todos />
    
     </>
   );
