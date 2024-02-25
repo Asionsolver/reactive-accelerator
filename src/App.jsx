@@ -1,4 +1,5 @@
-import MyComponents from "./components/escape-hatches/synchronizing-with-effects/MyComponents";
+// import { useState } from "react";
+// import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -9,9 +10,13 @@ function App() {
   // const age = 25;
   // const size = 200;
 
+  // Create chat room component
+  // const [show, setShow] = useState(true);
+
   return (
     <>
-      <MyComponents />
+      {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
+      {/* {show && <ChatRoom />} */}
     </>
   );
 }
