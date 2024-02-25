@@ -1,7 +1,4 @@
-
-
-import Todos from "./components/escape-hatches/useRef/flush-sync/Todos";
-
+import MyComponents from "./components/escape-hatches/synchronizing-with-effects/MyComponents";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -14,8 +11,7 @@ function App() {
 
   return (
     <>
-      <Todos />
-   
+      <MyComponents />
     </>
   );
 }
