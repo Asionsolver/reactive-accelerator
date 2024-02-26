@@ -1,12 +1,12 @@
-import { useState } from "react";
+import "../src/App.css";
+import Example6 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example6.1";
+
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
-import Example3 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example3";
-import { items1, items2 } from "./data/itemsData";
+// import { items1, items2 } from "./data/itemsData";
 
 // import Playground from "./components/escape-hatches/synchronizing-with-effects/putting-it-all/PlayGround";
 // import Form from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example1";
-
 
 // import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
 
@@ -27,27 +27,22 @@ function App() {
   // example 2
   // const [userId, setUserId] = useState(1);
 
-   // example3
-   const [items, setItems] = useState(items1);
-
+  // example3
+  // const [items, setItems] = useState(items1);
 
   return (
     <>
       {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
       {/* {show && <ChatRoom />} */}
-
       {/* <Comments postId='1' /> */}
-
       {/* putting it all together */}
       {/* <button onClick={() => setShow(!show)}>
         {show ? "Unmount" : "Mount"} the component
       </button>
       {show && <hr />}
       {show && <Playground />} */}
-
       {/* Initial three examples */}
       {/* <Form /> */}
-
       {/* Example 2: Resetting all state when a prop changes */}
       {/* <div>
         <button onClick={() => setUserId(userId === 1 ? 2 : 1)}>
@@ -57,11 +52,19 @@ function App() {
       <Example2 key={userId} userId={userId} /> */}
 
       {/* Example 3: Adjusting some state when a prop change */}
-            <button onClick={() => setItems(items2)}>
-                Switch to Items2
-            </button>{" "}
-            <button onClick={() => setItems(items1)}>Switch to Items1</button>
-            <Example3 items={items} />
+      {/* <button onClick={() => setItems(items2)}>Switch to Items2</button>{" "}
+      <button onClick={() => setItems(items1)}>Switch to Items1</button>
+      <Example3 items={items} /> */}
+
+      {/* Sharing logic between event handlers */}
+      {/* <Example4 /> */}
+
+      {/* Sending post request */}
+      {/* <Example5 /> */}
+
+      {/* Chains of Components */}
+      <Example6 />
+
     </>
   );
 }
