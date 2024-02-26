@@ -1,10 +1,13 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
+import Playground from "./components/escape-hatches/synchronizing-with-effects/putting-it-all/PlayGround";
 
-import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
+// import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
 
 function App() {
+  const [show, setShow] = useState(false);
+
   // const [color, setColor] = useState('red');
   // const handleChangeColor = () => {
   //   setColor('blue');
@@ -21,8 +24,13 @@ function App() {
       {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
       {/* {show && <ChatRoom />} */}
 
-      <Comments postId='1' />
+      {/* <Comments postId='1' /> */}
 
+      <button onClick={() => setShow(!show)}>
+        {show ? "Unmount" : "Mount"} the component
+      </button>
+      {show && <hr />}
+      {show && <Playground />}
     </>
   );
 }
