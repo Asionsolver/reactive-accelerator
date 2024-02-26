@@ -1,7 +1,8 @@
 // import { useState } from "react";
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
-import Animation from "./components/escape-hatches/synchronizing-with-effects/Animation";
+
+import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
 
 function App() {
   // const [color, setColor] = useState('red');
@@ -20,7 +21,7 @@ function App() {
       {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
       {/* {show && <ChatRoom />} */}
 
-      <Animation />
+      <Comments postId='1' />
 
     </>
   );
