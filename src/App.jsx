@@ -1,5 +1,6 @@
 import "../src/App.css";
-import Example6 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example6.1";
+// import useSomeAPI from "./api/useSomeAPI";
+import Example9 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example9";
 
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
@@ -29,6 +30,13 @@ function App() {
 
   // example3
   // const [items, setItems] = useState(items1);
+
+  // example 7
+  // const [isOn, setIsOn] = useState(false);
+
+  // example 8
+  // const [data, setData] = useState(null);
+  // const data = useSomeAPI();
 
   return (
     <>
@@ -63,7 +71,18 @@ function App() {
       {/* <Example5 /> */}
 
       {/* Chains of Components */}
-      <Example6 />
+      {/* <Example6 /> */}
+
+      {/* Notifying parent components about state changes */}
+      {/* <p>{isOn ? "On" : "Off"}</p>
+      <Example7 onChange={setIsOn} /> */}
+
+      {/* Passing data to the parent */}
+      {/* <p>{data && data}</p>
+      <Example8 data={data} /> */}
+
+      {/* Subscribing to an external store  */}
+      <Example9 />
 
     </>
   );
