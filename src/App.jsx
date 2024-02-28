@@ -1,6 +1,7 @@
 import "../src/App.css";
 // import useSomeAPI from "./api/useSomeAPI";
 import Example9 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example9";
+import SearchResults from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Searchresults";
 
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
@@ -82,7 +83,9 @@ function App() {
       <Example8 data={data} /> */}
 
       {/* Subscribing to an external store  */}
-      <Example9 />
+      {/* <Example9 /> */}
+
+      <SearchResults />
 
     </>
   );
