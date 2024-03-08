@@ -1,8 +1,6 @@
 import "../src/App.css";
-import MainChat from "./components/escape-hatches/life-cycle/MainChat";
 // import useSomeAPI from "./api/useSomeAPI";
-import Example9 from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example9";
-import SearchResults from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Searchresults";
+import Accordion from "./components/liftingStateUp/Accordion";
 
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
@@ -42,6 +40,9 @@ function App() {
 
   return (
     <>
+    {/* Lifting State Up */}
+
+    <Accordion />
       {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
       {/* {show && <ChatRoom />} */}
       {/* <Comments postId='1' /> */}
@@ -86,7 +87,7 @@ function App() {
       {/* Subscribing to an external store  */}
       {/* <Example9 /> */}
 
-      <MainChat />
+      {/* <MainChat /> */}
 
     </>
   );
