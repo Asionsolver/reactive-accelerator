@@ -5,6 +5,7 @@ export default function Dialogue() {
     const dialogueRef = useRef(null);
 
     useEffect(() => {
+        console.log("✅ Connecting...")
         const dialog = dialogueRef.current;
         dialog.showModal();
 

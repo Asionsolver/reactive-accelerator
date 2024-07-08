@@ -1,6 +1,6 @@
 import "../src/App.css";
 // import useSomeAPI from "./api/useSomeAPI";
-import Accordion from "./components/liftingStateUp/Accordion";
+// import Messenger from "./components/preserving_state_for_removed_components/Messenger";
 
 // import ChatRoom from "./components/escape-hatches/synchronizing-with-effects/ChatRoom";
 
@@ -9,7 +9,10 @@ import Accordion from "./components/liftingStateUp/Accordion";
 // import Playground from "./components/escape-hatches/synchronizing-with-effects/putting-it-all/PlayGround";
 // import Form from "./components/escape-hatches/synchronizing-with-effects/you-might-not-need-an-effect/Example1";
 
-// import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
+import Comments from "./components/escape-hatches/synchronizing-with-effects/fetching-data/Comments";
+// import { useState } from 'react';
+// import Dialogue from './components/escape-hatches/synchronizing-with-effects/Dialogue';
+
 
 function App() {
   // const [show, setShow] = useState(false);
@@ -41,11 +44,17 @@ function App() {
   return (
     <>
     {/* Lifting State Up */}
+    {/* <Messenger /> */}
+      {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
+      {show && <ChatRoom />} */}
+      
+      {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
+      {show && <Dialogue />} */}
 
-    <Accordion />
-      {/* <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button> */}
-      {/* {show && <ChatRoom />} */}
-      {/* <Comments postId='1' /> */}
+
+      <Comments postId='3' />
+
+      
       {/* putting it all together */}
       {/* <button onClick={() => setShow(!show)}>
         {show ? "Unmount" : "Mount"} the component

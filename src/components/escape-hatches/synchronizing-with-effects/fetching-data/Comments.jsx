@@ -8,15 +8,28 @@ export default function Comments({ postId }) {
   useEffect(() => {
     let ignore = false;
 
+    // console.log('Effecting...')
+    
+    
     // fetch comments here
     async function startFetching() {
+      // console.log('Fetching...')
       const json = await fetchComments(postId);
 
+      // setComments(json);
+
       if (!ignore) {
+        // console.log('fetching comments from if block')
         setComments(json);
       }
     }
+
+
     startFetching(); // async function call
+
+
+    // console.log('fetching comments')
+    // console.log('after fetching comments')
 
     return () => {
       ignore = true;
@@ -24,10 +37,11 @@ export default function Comments({ postId }) {
   }, [postId]);
 
   return (
-    <ul>
+    <ul style={{display:'flex', flexDirection:"column", alignItems:'center', backgroundColor: 'red' }}>
       {comments.map((comment) => (
-        <li key={comment.id}>{comment.name}</li>
+        <li style={{color:'white', backgroundColor:'black' }} key={comment.id}>{comment.name}</li>
       ))}
+    
     </ul>
   );
 }
